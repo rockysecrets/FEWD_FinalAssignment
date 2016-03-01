@@ -39,12 +39,11 @@
 /* BASE STYLES
 /*******************************************/
 
-
 body {
   color: #333333;
   font-size: 0.625em;
   line-height: 1.4;
-  font-family:Roboto;
+  font-family: Roboto;
   background-color: #ffffff;
 }
 
@@ -55,104 +54,148 @@ body {
 
 /* Center the container */
 
-
 #container {
   width: 100%;
   margin: 0 auto;
 }
-
 #hero {
   width: 100%;
-    margin: auto;
+  margin: auto;
   height: 600px;
-  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-  url(../img/hero.jpeg) no-repeat center top rgb(134, 141, 157);
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/hero.jpeg) no-repeat center top rgb(134, 141, 157);
   background-size: cover;
 }
-
-nav ul li{
+nav ul li {
   font-size: 2em;
   font-weight: 100;
   color: #ffffff;
   padding: 50px;
   flex-direction: row;
 }
-
-nav ul{
-  display:flex;
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
-
-.herotext{
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  display: flex;
+}
+.subpages nav ul li a {
+  color: #333333;
+}
+.subpages nav {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#logo a {
+  font-size: 3em;
+  color: #333333;
+  text-decoration: none;
+}
+#logo {
+  padding: 40px;
+}
+.herotext {
   font-weight: 100;
   color: #ffffff;
   text-align: center;
-    padding: 100px;
+  padding: 100px;
 }
-
 header, .herotext a {
   font-size: 5em;
   text-decoration: none;
-    color: #ffffff;
+  color: #ffffff;
 }
-
-h1{
+h1 {
   font-size: 2.8em;
-  padding:30px;
+  padding: 30px;
   text-align: center;
 }
-
-h2{
+h2 {
   font-size: 2em;
 }
-
-#featuredarticles{
-  display:flex;
+#featuredarticles {
+  display: flex;
   width: 100%;
 }
-
-#featuredarticles article{
-padding: 30px 0 30px 0;
+#featuredarticles article {
+  padding: 30px 0 30px 0;
   text-align: center;
 }
-
-#featuredarticles img{
-flex-direction: row;
+#featuredarticles img {
+  flex-direction: row;
   width: 90%;
 }
-
-.cta{
-    margin:40px;
-    text-align: center;
+.cta {
+  margin: 40px;
+  text-align: center;
 }
-
-#articles a{
+#articles a {
   font-weight: 100;
   text-decoration: none;
   font-size: 1.8em;
-  padding:10px 60px 10px 60px;
+  padding: 10px 60px 10px 60px;
   border: solid 1px #333333;
 }
-
-#instagramfeed{
+#instagramfeed {
   margin: auto;
   width: 92%;
+  padding-bottom: 20px;
 }
-
-footer{
-  width:100%;
+footer {
+  width: 100%;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-.subscribe{
-  float: right;
+.blurb {
+  padding: 40px;
+  width: 30%;
 }
-
+.blurb p {
+  font-size: 1.2em;
+  margin: 10px;
+}
+.socialmedia a {
+  padding: 3px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.8em;
+}
+.copyright span {
+  font-size: 0.8em;
+}
+.subscribe {
+  padding: 50px;
+}
+.subscribe p {
+  padding: 10px 0 10px 0;
+  font-size: 1.2em;
+}
+label {
+  font-weight: 100;
+  font-size: 1.5em;
+}
 input [type="email"], {
   display: block;
   margin: 0;
   width: 80%;
   appearance: none;
   box-shadow: none;
-  border: none;
+  border: solid 1px #969696;
+}
+button {
+  background: #ffffff;
+  border: 0 none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 1.3em;
+  font-weight: 100;
   border: solid 1px #969696;
 }
