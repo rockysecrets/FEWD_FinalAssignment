@@ -65,15 +65,6 @@ body {
   background-size: cover;
 }
 
-.recipehero{
-  width: 100%;
-  margin: auto;
-  height: 200px;
-  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/donuthero.jpg) no-repeat center top rgb(134, 141, 157);
-  background-size: cover;
-}
-
-
 nav ul li {
   font-size: 2em;
   font-weight: 100;
@@ -126,7 +117,8 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.2em;
+  font-weight: 100;
 }
 #featuredarticles {
   display: flex;
@@ -164,6 +156,33 @@ justify-content: center;
 .profile img{
   width:40%;
 margin: 50px;
+}
+
+.recipehero{
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/donuthero.jpg) no-repeat center top rgb(134, 141, 157);
+  background-size: cover;
+}
+
+.donutrecipe p{
+margin:auto;
+  width:50%;
+}
+
+.recipecore{
+  display: flex;
+  width: 100%;
+justify-content: center;
+}
+
+.recipecore ul{
+  display: inline-block;
+  border: solid 1px #333333;
+  padding:20px;
+  margin:30px;
+  width: 20%;
 }
 
 #instagramfeed {
