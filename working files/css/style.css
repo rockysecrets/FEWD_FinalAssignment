@@ -82,7 +82,7 @@ a:hover {
 nav ul {
   display: flex;
 }
-.subpages nav ul li a, .donutrecipe a {
+.subpages nav ul li a, .donutrecipe a, .profiletext a {
   color: #333333;
 }
 .subpages nav {
@@ -123,19 +123,51 @@ h2 {
 #featuredarticles {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 #featuredarticles article {
   padding: 30px 0 30px 0;
   text-align: center;
 }
 #featuredarticles img {
-  flex-direction: row;
+  /*flex-direction: row;*/
   width: 90%;
 }
+
+.recipe1{
+  background: url(../img/cookies.jpg);
+}
+
+.recipe2{
+background: url(../img/greentea.jpg);
+}
+
+.recipe3{
+background: url(../img/fruitypebbles.jpg);
+}
+
+.featuredrecipe{
+  width: 300px;
+  height:300px;
+  background-size:contain;
+  margin:20px;
+}
+
+.featuredrecipe p{
+  visibility: hidden;
+}
+
+.featuredrecipe:hover p{
+  visibility: visible;
+  opacity: 1;
+  color: white;
+  font-size: 2.6em;
+}
+
 .cta {
   display: flex;
 }
-#articles a {
+#articles .cta a {
   justify-content: center;
   font-weight: 100;
   text-decoration: none;
@@ -149,9 +181,30 @@ h2 {
   flex-direction: row;
   justify-content: center;
 }
-.profile img {
+.profile h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+.profilepic {
   width: 40%;
-  margin: 50px;
+}
+.profile img {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 40px;
+  padding: 10px;
+  border: solid 1px #333333;
+}
+.profiletext {
+  width: 25%;
+  padding: 30px;
+}
+.profiletext p, .profiletext a {
+  font-size: 1.4em;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: 300;
 }
 .recipehero {
   width: 100%;
@@ -174,7 +227,7 @@ h2 {
   margin: auto;
   width: 60%;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 10px;
 }
 .recipeimage {
@@ -221,16 +274,14 @@ h3 {
   padding: 40px;
   width: 50%;
 }
-
-.FormInput label, h4{
+.FormInput label, h4 {
   font-weight: 100;
   font-size: 2.4em;
 }
-.FormInput{
-  padding:10px 0 10px 0;
+.FormInput {
+  padding: 10px 0 10px 0;
 }
-
-input, textarea{
+input, textarea {
   width: 100%;
   display: block;
   border: 1px solid #999;
@@ -239,30 +290,25 @@ input, textarea{
   overflow: auto;
   padding: 10px;
 }
-
-textarea{
-  height:100px;
+textarea {
+  height: 100px;
 }
-
-input[placeholder], textarea[placeholder]{
+input[placeholder], textarea[placeholder] {
   font-family: inherit;
   font-size: 1.2em;
   font-weight: 100;
 }
-
-#checkbox{
+#checkbox {
   width: 10px;
-  height:12px;
+  height: 12px;
   margin: 10px;
-  display:inline-block;
+  display: inline-block;
 }
-
-fieldset button{
-  width:60%;
+fieldset button {
+  width: 60%;
   font-size: 1.8em;
-  padding:10px;
+  padding: 10px;
 }
-
 #instagramfeed {
   margin: auto;
   width: 92%;
@@ -305,7 +351,7 @@ label {
   display: inline-block;
   margin: 4px 5px 4px 0;
   width: 50%;
-  height:22px;
+  height: 22px;
   appearance: none;
   box-shadow: none;
   border: solid 1px #969696;

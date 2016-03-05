@@ -15,18 +15,18 @@
 <body>
 	<div class="overlay">
 		<section id="hero">
-				<nav>
-					<ul>
-						<li><a href="about.html">about</a></li>
-						<li><a href="recipe.html">recipes</a></li>
-						<li>blog</li>
-						<li><a href="contact.html">contact</a></li>
-					</ul>
-				</nav>
+			<nav>
+				<ul>
+					<li><a href="about.html">about</a></li>
+					<li><a href="recipe.html">recipes</a></li>
+					<li>blog</li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
 			<div class="herotext">
 				<header>#amdbakes</header>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-				<a href="#featuredarticles">˅</a>
+				<div id="herolink"><a href="#featuredarticles">˅</a></div>
 
 			</div>
 	</div>
@@ -36,17 +36,28 @@
 	<section id="articles">
 		<h1>FEATURED</H1>
 		<div id="featuredarticles">
-			<article>
-				<img src="img/cookies.jpg">
-			</article>
+			<a href="recipe.html">
+				<article class="featuredrecipe recipe1">
+					<p> White Chocolate Cranberry Cookies</p>
 
-			<article>
-				<img src="img/greentea.jpg">
-			</article>
+				</article>
+			</a>
 
-			<article>
-				<img src="img/fruitypebbles.jpg">
-			</article>
+			<a href="recipe.html">
+				<article class="featuredrecipe recipe2">
+
+					<p>Matcha Cake</p>
+
+				</article>
+			</a>
+
+			<a href="recipe.html">
+				<article class="featuredrecipe recipe3">
+
+					<p>Fruity Pebbles Cake</p>
+
+				</article>
+			</a>
 		</div>
 		<div class="cta"><a href="#">View all</a></div>
 	</section>
@@ -61,24 +72,28 @@
 </body>
 <footer>
 	<div class="blurb">
-			<!-- social media goes here -->
+		<!-- social media goes here -->
 		<p>See what I am up to when I am not busy trying not to burn my kitchen down</p>
-	<p class="socialmedia">
-	<a href="http://www.facebook.com/alwy.amanda"><i class="fa fa-facebook"></i></a>
-	<a href="http://www.instagram.com/rockysecrets"><i class="fa fa-instagram"></i></a>
-</p>
-<p class="copyright"><span>Copyright &copy; 2016 amdbakes. All rights reserved.</span></p>
+		<p class="socialmedia">
+			<a href="http://www.facebook.com/alwy.amanda"><i class="fa fa-facebook"></i></a>
+			<a href="http://www.instagram.com/rockysecrets"><i class="fa fa-instagram"></i></a>
+		</p>
+		<p class="copyright">
+			<span>Copyright &copy; 2016 amdbakes. All rights reserved.</span>
+		</p>
 	</div>
 
 	<div class="subscribe">
 		<form>
 			<label for="Email">Subscribe</label>
-<p> Follow up to date with my weekly recipes and blog posts!</p>
+			<p> Follow up to date with my weekly recipes and blog posts!</p>
 			<input type="email" id="emailaddress" placeholder="hello@gmail.com" />
 			<button>Submit</button>
 		</form>
 	</div>
 
 </footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </html>
