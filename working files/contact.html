@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="AmdBakes Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>amdbakes - contact</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,400italic,500,700,300,300italic,500italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- external CSS link -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="animate.min.css">
 </head>
 
 <body>
@@ -35,7 +37,8 @@
 
   <section class="contactform">
     <article class="form">
-      <form action="mailto:choochoootrain@gmail.com" method="post" enctype="text/plain">
+
+      <form name="myForm" action="" onsubmit="return validateForm()" method="post" enctype="text/plain">
 
         <fieldset>
           <legend>
@@ -43,11 +46,11 @@
           </legend>
           <div class="FormInput">
             <label for="Name">Name</label>
-            <input type="text" id="firstName" placeholder="John Doe" />
+            <input type="text" id="firstName" placeholder="John Doe" required />
           </div>
           <div class="FormInput">
             <label for="email">Email</label>
-            <input type="email" id="emailaddress" placeholder="hello@gmail.com" />
+            <input type="email" id="emailaddress" placeholder="hello@gmail.com" required />
           </div>
           <div class="FormInput">
             <label for="message">Message</label>
